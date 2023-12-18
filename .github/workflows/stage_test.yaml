@@ -2,9 +2,9 @@ name: Build and Deploy demo-order-data
 
 on:
   push:
-    branches: [  test-deploy ]
+    branches: [  Master ]
   pull_request:
-    branches: [  test-deploy ]
+    branches: [  Master ]
 
 env:
   APP_NAME: order-data
