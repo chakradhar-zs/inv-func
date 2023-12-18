@@ -62,7 +62,7 @@ jobs:
         with:
           registry: gcr.io
           username: _json_key
-          password: ${{ env.STAGE_DEPLOY_KEY }}
+          password: ${{ env.GCR_KEY }}
 
       - name: Build and Push Docker Image to GCR
         run: |
