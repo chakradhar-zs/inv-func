@@ -65,12 +65,10 @@ jobs:
           password: ${{ env.STAGE_DEPLOY_KEY }}
 
       - name: Build and Push Docker Image to GCR
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          context: .
-          file: ${{ inputs.DOCKER_FILE_PATH }}/Dockerfile
-          tags: gcr.io/${{ env.GCR_PROJECT }}/${{ env.APP_NAME }}:${{ github.sha }}
+        run: |
+          docker build -t inv:67 .
+          docker tag inv:67 gcr.io/${{ env.GCR_PROJECT }}/${{ env.APP_NAME }}:${{ github.sha }}
+          docker push gcr.io/${{ env.GCR_PROJECT }}/${{ env.APP_NAME }}:${{ github.sha }}
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
