@@ -70,6 +70,7 @@ jobs:
           docker tag inv:67 gcr.io/${{ env.GCR_PROJECT }}/${{ env.APP_NAME }}:${{ github.sha }}
           docker push gcr.io/${{ env.GCR_PROJECT }}/${{ env.APP_NAME }}:${{ github.sha }}
 
+
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
         with:
