@@ -12,29 +12,8 @@ env:
   CLUSTER_NAME: nginx-dev
   CLUSTER_PROJECT: zs-devops
   GCR_PROJECT: zs-devops
-  STAGE_DEPLOY_KEY: '{
-  "type": "service_account",
-  "project_id": "zs-devops",
-  "private_key_id": "7d6ca00031cc7cdc1f610bcbe382efd440ab980d",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC2vSlkbpH6NxO6\nTKZzJ6ijvAFTFifZYfawKAHRQ7ow34V01m6k98LdC2PqeIbmxJXMDvxAhPkWi8a1\nXlBEQSBnJ74cuekSgl//cmm3qBsPFFhWBi3AzZehefHHE2NxHAYQ+ALeHNFRy3d3\n/JILl6VTfVCF/69fiBLfUrAY869S2S8LvzV2yCFBKbeM8ywyFuvid/uNQuH9XJIz\n6nO/cZlsbHAGzu5ANswjLfgEPHNuY+k6EcvL5G/p3sjbf13YhbQZ+jkwZRNIuELH\n407xpVXxcW4AT3sFx12EJdGu6S6sY5ZD2Qs8F4Vbv1qXDARBMRb3RPFMw03eelOw\ns6kIRKFjAgMBAAECgf9JsgDlkoCeMVrD+P8R8lR0rcQSRSShr87TUrLWTtq7NSih\nUwpQ5J4E9sh5Xr9+gEUX7G78L/S1UUDdLnNttrug6lJacRBCno7SuK1rlEwfOkmD\nurNDJrYwmGPtXv9eaMVXpSzfbaLppz+mwzp5SEbwTm65X3Q7vK3FS6iU5uU8/+Ki\nYJQGOA8IakMzQep8jS7AI8b2OZov4jqeJsgpmghNuc/hoi6/HWiQKrO00EvVEbem\ngJE/mdECfyTLBiGWNXDteO1UcvMVvSs/0muAEH3Kwuc9YZ/H4d38hFtv8AtW/x35\nVxCsxiep85gZKileCWbpI1uPJLHby+R1PxdOnWECgYEA7pbtwu8vtx7z9sEyKPoG\n32sNGuZ+Sqj8z932R40tMv2YNlDyxx6kvaxnbeQr9pT75XbDVgY49e2INNPWLS+4\npWr3KwJhlrb3ql4/E7XJeLVsU4Que7brmgsa9M1gdXJ/sn0FOhwmf59j+BQWH2fR\nO6bpkR+dJ3Jiz3fEMOyJiGECgYEAxBLkRLhu7CwPO5UwEYzCQrYiMJRkcW2MYRdu\n6YKRMTpZeKJPMojO14R9H5ndS1Ni/wz+SALY6LxDAz5WiCwv0Vyu4zZ4R1SiH4jJ\nkJZFEJ7UBynJssbyXAJ1njrU52r8RNWLJEJunNICA63wY6S2OEvGieYd2siKW/hR\nqLxL8EMCgYAjXiZCtlg5ahI6Kut3nZC1P9ZCfZaNFL3dRocClk/z9hnBO4Cxub4s\nC8mNRbyqoe0xV8ifEO8SrbJ6OkjOi/twMgoPyxuSTu8pxyzMjC8ggKxdOQP2/Oex\n/yFw1p0M6/s4B0ZmFdQzKPqVxMx+vVIL6LNI+wm91jwFizh/FCFTIQKBgGocOzLB\niS4AziGVpFTrEzpdLPWTaSRFf+IPd3OhuIemp0L0u92CUkYqKjjO4Qbh0sJqurYn\n7FFPiQiZVOUO3LX17aODF+aqc66TLVo1KJ1NBzv1LnW02vZWUmbWOeAfcvShiFKQ\nLSJrOLHbESwruH2Q7Jo2UdPUEaSiJzck6AfXAoGAQT1yK5cFx1wTL3/I0lXAZBJs\ni0eKp+AZhyhfdPIy2nbGy7IDCk6/WRiFWD4McN6aJpvfIq3fOwWwHnOiVCvaZ40d\nExTIC4yb551vuVVxKB1x5t4c68ENayhZqjBYXYfRTu+AbU6NEjfAs9D6mKyd1mjj\n1g+TSkTP3CvGwWf7Ds0=\n-----END PRIVATE KEY-----\n",
-  "client_email": "nginx-dev-sample@zs-devops.iam.gserviceaccount.com",
-  "client_id": "106829355197086814802",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nginx-dev-sample%40zs-devops.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-'
-  GCR_KEY: '{
-  "auths": {
-    "us-central1-docker.pkg.dev": {
-      "password": "{\n  \"type\": \"service_account\",\n  \"project_id\": \"zs-devops\",\n  \"private_key_id\": \"7d6ca00031cc7cdc1f610bcbe382efd440ab980d\",\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQC2vSlkbpH6NxO6\\nTKZzJ6ijvAFTFifZYfawKAHRQ7ow34V01m6k98LdC2PqeIbmxJXMDvxAhPkWi8a1\\nXlBEQSBnJ74cuekSgl//cmm3qBsPFFhWBi3AzZehefHHE2NxHAYQ+ALeHNFRy3d3\\n/JILl6VTfVCF/69fiBLfUrAY869S2S8LvzV2yCFBKbeM8ywyFuvid/uNQuH9XJIz\\n6nO/cZlsbHAGzu5ANswjLfgEPHNuY+k6EcvL5G/p3sjbf13YhbQZ+jkwZRNIuELH\\n407xpVXxcW4AT3sFx12EJdGu6S6sY5ZD2Qs8F4Vbv1qXDARBMRb3RPFMw03eelOw\\ns6kIRKFjAgMBAAECgf9JsgDlkoCeMVrD+P8R8lR0rcQSRSShr87TUrLWTtq7NSih\\nUwpQ5J4E9sh5Xr9+gEUX7G78L/S1UUDdLnNttrug6lJacRBCno7SuK1rlEwfOkmD\\nurNDJrYwmGPtXv9eaMVXpSzfbaLppz+mwzp5SEbwTm65X3Q7vK3FS6iU5uU8/+Ki\\nYJQGOA8IakMzQep8jS7AI8b2OZov4jqeJsgpmghNuc/hoi6/HWiQKrO00EvVEbem\\ngJE/mdECfyTLBiGWNXDteO1UcvMVvSs/0muAEH3Kwuc9YZ/H4d38hFtv8AtW/x35\\nVxCsxiep85gZKileCWbpI1uPJLHby+R1PxdOnWECgYEA7pbtwu8vtx7z9sEyKPoG\\n32sNGuZ+Sqj8z932R40tMv2YNlDyxx6kvaxnbeQr9pT75XbDVgY49e2INNPWLS+4\\npWr3KwJhlrb3ql4/E7XJeLVsU4Que7brmgsa9M1gdXJ/sn0FOhwmf59j+BQWH2fR\\nO6bpkR+dJ3Jiz3fEMOyJiGECgYEAxBLkRLhu7CwPO5UwEYzCQrYiMJRkcW2MYRdu\\n6YKRMTpZeKJPMojO14R9H5ndS1Ni/wz+SALY6LxDAz5WiCwv0Vyu4zZ4R1SiH4jJ\\nkJZFEJ7UBynJssbyXAJ1njrU52r8RNWLJEJunNICA63wY6S2OEvGieYd2siKW/hR\\nqLxL8EMCgYAjXiZCtlg5ahI6Kut3nZC1P9ZCfZaNFL3dRocClk/z9hnBO4Cxub4s\\nC8mNRbyqoe0xV8ifEO8SrbJ6OkjOi/twMgoPyxuSTu8pxyzMjC8ggKxdOQP2/Oex\\n/yFw1p0M6/s4B0ZmFdQzKPqVxMx+vVIL6LNI+wm91jwFizh/FCFTIQKBgGocOzLB\\niS4AziGVpFTrEzpdLPWTaSRFf+IPd3OhuIemp0L0u92CUkYqKjjO4Qbh0sJqurYn\\n7FFPiQiZVOUO3LX17aODF+aqc66TLVo1KJ1NBzv1LnW02vZWUmbWOeAfcvShiFKQ\\nLSJrOLHbESwruH2Q7Jo2UdPUEaSiJzck6AfXAoGAQT1yK5cFx1wTL3/I0lXAZBJs\\ni0eKp+AZhyhfdPIy2nbGy7IDCk6/WRiFWD4McN6aJpvfIq3fOwWwHnOiVCvaZ40d\\nExTIC4yb551vuVVxKB1x5t4c68ENayhZqjBYXYfRTu+AbU6NEjfAs9D6mKyd1mjj\\n1g+TSkTP3CvGwWf7Ds0=\\n-----END PRIVATE KEY-----\\n\",\n  \"client_email\": \"nginx-dev-sample@zs-devops.iam.gserviceaccount.com\",\n  \"client_id\": \"106829355197086814802\",\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/nginx-dev-sample%40zs-devops.iam.gserviceaccount.com\",\n  \"universe_domain\": \"googleapis.com\"\n}\n",
-      "email": "image-pull@gcr",
-      "username": "_json_key"
-    }
-  }
-}'
+  STAGE_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+  GCR_KEY: ${{ secrets.GCR_KEY }}
 jobs:
   build:
     name: 🧪 Unit Tests and 🔨 Build
